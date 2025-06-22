@@ -15,3 +15,8 @@ How it Works-Automation and Background Activity?
 
 ![Project Screenshot](battery/6.png)
 
+
+![Project Screenshot](battery/0.png)
+
+
+
