@@ -1,0 +1,65 @@
+
+    <!DOCTYPE html charset="utf-8">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=8.0, minimum-scale=.25, user-scalable=yes" />
+    <link href="../Theme/bootstrap.min.css" rel="stylesheet" />
+    
+    <link href="../Theme/font-awesome.css" rel="stylesheet" />
+    <link href="../Theme/ionicons.min.css" rel="stylesheet" />
+    <link href="../Theme/RBGLite.css" rel="stylesheet" />
+    <link href="../Theme/RBGskins.css" rel="stylesheet" />
+    <link href="../Theme/bootstrap-slider.css" rel="stylesheet" />
+    <link href="../Theme/BEautyFonts.css" rel="stylesheet" />
+    <link href="../Theme/daterangepicker.css" rel="stylesheet" />
+    <link href="../Theme/jquery-ui.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="col-md-6 bg-warning">
+        <h3 class="text-center">Voltage Trend</h3>
+        <div id="Voltage" style="height:500px; width: 100%;background-color: aqua;">
+
+        </div>
+        </div>
+        <div class="col-md-6 bg-success">
+        <h3 class="text-center">SOC Trend</h3>
+        <div id="SOC" style="height:500px; width: 100%;background-color: aqua;">
+
+        </div>
+        </div>
+        <script src="../Theme/JS/jquery.min.js"></script>
+   
+     
+        <script src="../Theme/JS/moment.js"></script>
+         <script src="../Theme/JS/popper.min.js"></script>
+        <script src="../Theme/JS/bootstrap.min.js"></script>
+        
+        <script src="../Theme/JS/jquery.slimscroll.min.js"></script>
+        <script src="../Theme/JS/fastclick.js"></script>
+        <script src="../Theme/JS/bootstrap-slider.js"></script>
+        <script src="../Theme/JS/daterangepicker.js"></script>
+        <script src="../Theme/JS/RBGLITE.min.js"></script>
+        <script src="../Theme/JS/RBG.js"></script>
+        <script src="../Theme/JS/Charts/RBGcharts.js"></script>
+
+    <script src="../Theme/JS/Charts/RBGexporting.js"></script>
+    <script src="../Theme/JS/Charts/RBGexport-data.js"></script>
+    <script src="../Theme/JS/Charts/regression.js"></script>
+    <script src="../Theme/JS/ShivamCode.js"></script>
+    <script>
+
+        var GateName=["VQA (Samples)"," Battery Assy"," BDF"," ADF"," Level 2"," PDI Entry (SFLT)"," PDI"," Dispatch Yard"] ;
+        var wAvg = [12.88335895465027, 12.793349738541988, 12.912934131736526, 12.854583841135565, 12.515196272065177, 12.667142857142858, 12.631267133193374, 12.646870129870129] ;
+        
+        var var2 = [12.7, 12.7, 12.7, 12.7, 12.4, 12.4, 12.4, 12.4] ;
+        var SOCavg =  [78.33589546502691, 69.73146724084897, 81.2934131736527, 75.45838411355653, 69.00752993457598, 56.714285714285715, 53.46559365523676, 54.8748051948052] ;
+        var reqSOC = [75.0,75.0,75.0,75.0,60.0,60.0,60.0,60.0];
+        
+        DoGraph('Voltage',GateName,var2,wAvg);
+        DoGraph1('SOC',GateName,SOCavg,reqSOC);
+    </script>
+    </body>
+
+</html>
+
+    
