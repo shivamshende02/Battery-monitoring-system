@@ -10,3 +10,6 @@ How it Works-Automation and Background Activity?
 3) Battery Manufacturing Date is automatically derived from Battery Number which helps calculating Battery Age at various stage. And highlight if it exceeds ERC recommended Age.
 4) RIYA AI automatically Derive SOC from Voltage and Vice a Versa.
 5) Automatically detects if Battery Is changed on Vehicle and provide report.
+
+![Project Screenshot](battery/Screenshot(38).png)
+
