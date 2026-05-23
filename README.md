@@ -1,15 +1,102 @@
-It is Application built on Microsoft PowerApps Platform where TML Network is not available. And RIYA Web Framework Where TML Network is Available, which enables Organization users to use it on their respective devices only if their device is linked and connected or Organization setting or TML Network.
-Its access can be controlled to specific or designated users. Also its Real Time data is available on SharePoint. Which can also be accessed in Excel files and also Analysed using AI into Web Dashboard.
-How it Works-Power Apps?
-Users log in with their Organization Account, which must be pre-set on their device. At the beginning user have to select Stage Where he/she is checking. When checking a vehicle, users must scan the VIN, battery number, and enter the battery voltage and current (if readings are available). For checks conducted in the VQA (before fitment), users need to scan the battery number and enter the voltage reading. Currently, batteries are checked on a sample basis in the VQA; however, we recommend conducting 100% battery checks at this stage. Data is automatically sent to the Cloud Database (SharePoint), where it is analyzed and linked to the RIYA System at intervals of every 10 minutes.
 
 
-How it Works-Automation and Background Activity?
-1) Part Genealogy data is automatically gathered from IPMS every 10 Mins.
-2) BDF, ADF and Level 2 test includes Battery Voltage and SOC checking which is also automatically gathered from ED server every 10 Mins.
-3) Battery Manufacturing Date is automatically derived from Battery Number which helps calculating Battery Age at various stage. And highlight if it exceeds ERC recommended Age.
-4) RIYA AI automatically Derive SOC from Voltage and Vice a Versa.
-5) Automatically detects if Battery Is changed on Vehicle and provide report.
+# 🔋 Battery Health Monitoring System
+
+Welcome to the repository for the **Battery Health Monitoring System**, an AI and IoT-driven solution developed during an internship at Tata Motors Ltd., Pune. This system is designed to track battery performance and health throughout the vehicle manufacturing process.
+
+---
+
+## 🎯 Project Overview
+
+During the manufacturing of Tata vehicles, specifically the Harrier and Safari models, recurring battery drain issues were observed prior to dispatch. To resolve this, a system was implemented integrating Microsoft PowerApps and the RIYA (Real-time Intelligence Yielding Architecture) Web Framework for real-time tracking. The primary goal is to seamlessly collect, analyze, and visualize data to prevent battery failures and optimize manufacturing efficiency.
+
+---
+
+## ✨ Key Features
+
+* 
+**Real-Time Monitoring:** Utilizes IoT-enabled sensors to capture critical battery metrics like voltage, temperature, and current at various manufacturing stages.
+
+
+* 
+**Barcode Integration:** Features barcode scanning using Zebra mobile devices to accurately track the Vehicle Identification Number (VIN) and Battery ID.
+
+
+* 
+**Automated Data Gathering:** Automatically collects part genealogy data from IPMS and battery voltage/SOC data from the ED server every 10 minutes.
+
+
+* 
+**Cloud Connectivity:** Securely transmits and stores real-time performance data using SharePoint cloud storage.
+
+
+* 
+**AI-Driven Analytics:** Employs AI algorithms to derive State of Charge (SOC) from voltage and powers predictive web dashboards to flag anomalies.
+
+
+
+---
+
+## 🛠️ Technology Stack
+
+* 
+**Frontend Technologies:** RIYA Web Framework (custom UI/UX, charts, widgets) and Microsoft PowerApps.
+
+
+* 
+**Backend & Processing:** Python, utilizing Pandas for data cleaning, and NumPy/Matplotlib for statistical analysis and trends.
+
+
+* 
+**Database:** SharePoint integration for auto-growing knowledge databases and real-time storage.
+
+
+* 
+**Visualization:** JavaScript libraries for generating dynamic, real-time interactive line charts and heatmaps.
+
+
+
+---
+
+## 🚧 Challenges & Solutions
+
+* 
+**Connectivity Issues:** Remote locations caused network latency and data synchronization delays. This was addressed by implementing offline data storage with an auto-sync feature that activates when connectivity is restored.
+
+
+* 
+**User Adaptability:** Employees were unaccustomed to barcode scanning, leading to resistance and missed data. To solve this, training sessions were conducted, and the PowerApps interface was simplified with added audio/visual feedback to confirm successful scans.
+
+
+* 
+**Inconsistent Data Collection:** Aggregating data from multiple locations with varying infrastructure caused inconsistencies. A centralized data pipeline and AI-based error detection were created to flag missing entries.
+
+
+
+---
+
+## 🚀 Future Scope
+
+* 
+**Predictive Maintenance:** Implementing machine learning models to forecast potential battery failures and recommend proactive maintenance before issues occur.
+
+
+* 
+**Diagnostic Integration:** Connecting the monitoring system directly with vehicle diagnostic tools to analyze battery performance and lifespan under varying conditions.
+
+
+* 
+**Component Expansion:** Extending the health tracking system to other critical vehicle components, such as alternators and power electronics.
+
+
+* 
+**Plant-Wide Scaling:** Scaling the monitoring solution across multiple Tata Motors manufacturing plants to establish an industry-wide framework for quality control.
+
+
+
+---
+
+*Author: Mr. Shivam Shende* *Institution: Savitribai Phule Pune University / Dr. D. Y. Patil Institute of Technology*
 
 ![Project Screenshot](battery/Screenshot(38).png)
 
