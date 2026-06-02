@@ -109,3 +109,9 @@ During the manufacturing of Tata vehicles, specifically the Harrier and Safari m
 
 
 
+🛡️ License
+This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
+
+🌟 About Me
+Hi there! I'm Shivam Shende. I’m a final-year Computer Engineering student and a dedicated tech enthusiast on a mission to build innovative, secure solutions. Whether I'm exploring the complexities of Artificial Intelligence and Machine Learning or architecting smart contracts on the Blockchain, I love turning complex ideas into impactful technology! 
+
